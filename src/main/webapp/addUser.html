@@ -4,22 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Add user AVovk app</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
+    <div class="main">
+        <form action="/avovkHW26/api/add" class="form" method="POST">
 
-<form action="/avovkHW26/api/add" method="POST">
-    First name:
-    <br>
-    <input type="text" name="firstName">
-    <br>
-    Last name:
-    <br>
-    <input type="text" name="lastName">
-    <br>
-    <input type="submit" value="Submit">
-</form>
+            <label><b>First name</b></label>
+            <input type="text" class="input" placeholder="Enter first name" name="firstName" required>
 
+            <label><b>Last name</b></label>
+            <input type="text" class="input" placeholder="Enter last name" name="lastName" required>
+            <button type="submit" class="btn">Submit</button>
+    </form>
+    </div>
 </body>
 
 
